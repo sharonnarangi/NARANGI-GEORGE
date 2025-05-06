@@ -16,15 +16,22 @@
           <li><a href="#" class="text-white hover:text-yellow-300 font-medium">Projects</a></li>
           <li><a href="#" class="text-white hover:text-yellow-300 font-medium">Contact</a></li>
         </ul>
-        <div class="flex items-center cursor-pointer block" id="menu-toggle">
-          <span class="block w-6 h-0.5 bg-black mb-1"></span>
-          <span class="block w-6 h-0.5 bg-black mb-1"></span>
-          <span class="block w-6 h-0.5 bg-black mb-1"></span>
-          
-        </div>
-        <div id="mobile-menu" class="hidden">
-          <!-- Mobile nav items -->
-        </div>
+       <!-- Hamburger Icon -->
+<div class="md:hidden flex flex-col justify-center items-center space-y-1 cursor-pointer" id="menu-toggle">
+  <span class="block w-6 h-0.5 bg-black transition-transform duration-300 origin-top-left" id="bar1"></span>
+  <span class="block w-6 h-0.5 bg-black transition-opacity duration-300" id="bar2"></span>
+  <span class="block w-6 h-0.5 bg-black transition-transform duration-300 origin-bottom-left" id="bar3"></span>
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden hidden mt-2">
+  <!-- Your mobile nav items here -->
+  <ul class="bg-white shadow rounded p-4 space-y-2">
+    <li><a href="#" class="block text-black">Home</a></li>
+    <li><a href="#" class="block text-black">About</a></li>
+    <li><a href="#" class="block text-black">Contact</a></li>
+  </ul>
+</div>
         
       </nav>
     </header>
