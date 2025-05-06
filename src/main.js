@@ -2,7 +2,12 @@ import './style.css'
 // Your JavaScript code here
 console.log('Vite + Tailwind CSS!');
 
-const toggle = document.getElementById('menu-toggle');
+document.getElementById('menu-toggle').addEventListener('click', () => {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+  
+  const toggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('mobile-menu');
 const bar1 = document.getElementById('bar1');
 const bar2 = document.getElementById('bar2');
@@ -26,5 +31,3 @@ toggle.addEventListener('click', () => {
     bar2.classList.remove('opacity-0');
   }
 });
-
-  
