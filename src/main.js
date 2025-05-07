@@ -18,13 +18,15 @@ toggle.addEventListener('click', () => {
 
   if (isOpen) {
     // Animate into X
-    bar1.classList.add('rotate-45', 'translate-y-1.5');
-    bar3.classList.add('-rotate-45', '-translate-y-1.5');
-    bar2.classList.add('opacity-0');
+   // Correct code
+bar1.style.transform = 'translateY(6px) rotate(45deg)';
+bar2.style.opacity = '0';  // Middle bar should disappear
+bar3.style.transform = 'translateY(-6px) rotate(-45deg)';  // Opposite rotation
   } else {
     // Revert to hamburger
-    bar1.classList.remove('rotate-45', 'translate-y-1.5');
-    bar3.classList.remove('-rotate-45', '-translate-y-1.5');
-    bar2.classList.remove('opacity-0');
+    // When closing menu
+bar1.style.transform = 'none';
+bar2.style.opacity = '1';
+bar3.style.transform = 'none';
   }
 });
