@@ -4,38 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Tailwind</title>
-    <link rel="stylesheet" href="/src/style.css">
+    <!-- Temporarily keep using the CDN until you resolve the installation issues -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom styles for the hamburger menu animation */
+      #bar1, #bar2, #bar3 {
+        transition: all 0.3s ease;
+        height: 2px;
+        width: 24px;
+        background-color: white;
+        margin-bottom: 4px;
+      }
+    </style>
   </head>
   <body class="bg-yellow-50">
     <header class="bg-orange-600 shadow-md">
-      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <nav class="container mx-auto px-4 py-4 flex justify-between items-center relative">
         <h1 class="text-2xl font-bold text-white">NARANGI</h1>
-        <ul class="flex space-x-6">
+        
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6">
           <li><a href="#" class="text-white hover:text-yellow-300 font-medium">Home</a></li>
           <li><a href="#" class="text-white hover:text-yellow-300 font-medium">About</a></li>
           <li><a href="#" class="text-white hover:text-yellow-300 font-medium">Projects</a></li>
           <li><a href="#" class="text-white hover:text-yellow-300 font-medium">Contact</a></li>
         </ul>
-       <!-- Hamburger Icon -->
-<div class="md:hidden flex flex-col justify-center items-center space-y-1 cursor-pointer" id="menu-toggle">
-  <span class="block w-6 h-0.5 bg-white mb-1 transition-transform duration-300 transform" id="bar1"></span>
-<span class="block w-6 h-0.5 bg-white mb-1 transition-opacity duration-300 transform" id="bar2"></span>
-<span class="block w-6 h-0.5 bg-white mb-1 transition-transform duration-300 transform" id="bar3"></span>
-
- </div>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="md:hidden hidden mt-2">
-  <!-- Your mobile nav items here -->
-  <ul class="bg-white shadow rounded p-4 space-y-2">
-    <li><a href="#" class="block text-black">Home</a></li>
-    <li><a href="#" class="block text-black">About</a></li>
-    <li><a href="#" class="block text-black">Contact</a></li>
-  </ul>
-</div>
         
+        <!-- Hamburger Icon -->
+        <div class="md:hidden flex flex-col justify-center items-center cursor-pointer z-10" id="menu-toggle">
+          <span id="bar1"></span>
+          <span id="bar2"></span>
+          <span id="bar3"></span>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden absolute top-full right-0 left-0 mt-2">
+          <ul class="bg-white shadow rounded p-4 space-y-2">
+            <li><a href="#" class="block text-black hover:text-orange-600">Home</a></li>
+            <li><a href="#" class="block text-black hover:text-orange-600">About</a></li>
+            <li><a href="#" class="block text-black hover:text-orange-600">Projects</a></li>
+            <li><a href="#" class="block text-black hover:text-orange-600">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </body>
-</html>
+    
+    
+   </body>
+   </html>
