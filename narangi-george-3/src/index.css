@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+    .btn {
+        @apply px-6 py-2 rounded-full text-white font-semibold transition-transform duration-300 ease-in-out;
+    }
+
+    .btn-projects {
+        @apply bg-orange-600 hover:bg-orange-700;
+    }
+
+    .btn-contact {
+        @apply bg-orange-500 hover:bg-orange-600;
+    }
+
