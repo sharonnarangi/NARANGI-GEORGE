@@ -17,3 +17,8 @@
         @apply bg-orange-500 hover:bg-orange-600;
     }
 
+    html {
+      scroll-behavior: smooth;
+  }
+  
+
