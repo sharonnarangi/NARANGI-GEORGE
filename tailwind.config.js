@@ -10,3 +10,18 @@ export default {
     plugins: [],
   };
   
+  module.exports = {
+    content: [
+      './index.html',
+      './src/**/*.{js,ts,jsx,tsx}', // Adjust based on your file structure
+    ],
+    theme: {
+      extend: {
+        // Add any custom colors here
+      },
+    },
+    plugins: [
+      require('tailwindcss-smooth-scroll'),
+    ],
+  }
+  
