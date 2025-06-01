@@ -3,53 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Narangi-George </title>
-    <!-- Temporarily keep using the CDN until you resolve the installation issues -->
+    <title>Narangi-George</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-          @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
+      @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
     </style>
   </head>
-  <body class="bg-[#432818] font-sans">
-    
-    <header class="bg-[#F5D7B0] py-4">
+  <body class="bg-[#432818] font-sans text-white">
+
+    <!-- Header -->
+    <header class="bg-[#252422] py-4">
       <nav class="container mx-auto flex justify-between items-center px-4">
-        <h1 class="text-[#3C2A21] text-3xl font-bold font-[Bungee]">Legal Tech with Narangi</h1>
-        <ul class="flex space-x-8 text-[#3C2A21] font-semibold text-lg">
-          <li class="flex items-center space-x-2 hover:text-[#F2C078] transition">
+        <h1 class="text-white text-3xl font-bold font-[Bungee]">Legal Tech with Narangi</h1>
+        <ul class="flex space-x-8 font-semibold text-lg">
+          <li class="flex items-center space-x-2 hover:text-[#fb6f92] transition">
             <!-- Home Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M3 9.5L12 3l9 6.5V21a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1V9.5z"/>
             </svg>
             <span>Home</span>
           </li>
-    
-          <li class="flex items-center space-x-2 hover:text-[#F2C078] transition">
+
+          <li class="flex items-center space-x-2 hover:text-[#fb6f92] transition">
             <!-- About Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M12 12v4M12 8h.01M4.22 19.78A10 10 0 1 1 19.78 4.22 10 10 0 0 1 4.22 19.78z"/>
             </svg>
             <span>About</span>
           </li>
-    
-          <li class="flex items-center space-x-2 hover:text-[#F2C078] transition">
+
+          <li class="flex items-center space-x-2 hover:text-[#fb6f92] transition">
             <!-- Projects Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M15 4V2h-6v2M6 6h12v14H6z"/>
             </svg>
             <span>Projects</span>
           </li>
-    
-          <li class="flex items-center space-x-2 hover:text-[#F2C078] transition">
+
+          <li class="flex items-center space-x-2 hover:text-[#fb6f92] transition">
             <!-- Articles Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h4"/>
             </svg>
-            <span>Articles</span>
+            <span>Blog Posts</span>
           </li>
-    
-          <li class="flex items-center space-x-2 hover:text-[#F2C078] transition">
+
+          <li class="flex items-center space-x-2 hover:text-[#fb6f92] transition">
             <!-- Contact Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
@@ -59,99 +58,63 @@
         </ul>
       </nav>
     </header>
-    
-    
-    
-    <script>
-      // Hamburger menu functionality
-      document.addEventListener('DOMContentLoaded', () => {
-        const toggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('mobile-menu');
-        const bar1 = document.getElementById('bar1');
-        const bar2 = document.getElementById('bar2');
-        const bar3 = document.getElementById('bar3');
 
-        let isOpen = false;
+    <!-- Amie Blu Style Section -->
+    <nav class="flex justify-between items-center p-6 text-sm font-medium uppercase text-white">
+      <div class="space-x-6">
+        <a href="#" class="hover:text-[#fb6f92]">Legal Articles</a>
+      </div>
+      <div class="space-x-6">
+        <a href="https://www.linkedin.com/in/sharon-narangi-3a4499240/" class="hover:text-[#fb6f92]">
+          Follow Narangi Sharon [LinkedIn]
+        </a>
+      </div>
+      
+      </div>
+    </nav>
 
-        toggle.addEventListener('click', () => {
-          menu.classList.toggle('hidden');
-          isOpen = !isOpen;
-
-          if (isOpen) {
-            // Animate into X
-            bar1.style.transform = 'translateY(6px) rotate(45deg)';
-            bar2.style.opacity = '0';
-            bar3.style.transform = 'translateY(-6px) rotate(-45deg)';
-          } else {
-            // Revert to hamburger
-            bar1.style.transform = 'none';
-            bar2.style.opacity = '1';
-            bar3.style.transform = 'none';
-          }
-        });
-      });
-    </script>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Amie Blu Style Landing</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body class="bg-yellow-400 text-red-700 font-sans">
-    
-      <!-- Navbar -->
-      <nav class="flex justify-between items-center p-6 text-sm font-medium uppercase">
-        <div class="space-x-6">
-          <a href="#" class="hover:underline">Home</a>
-          <a href="#" class="hover:underline">Projects</a>
-        </div>
-        <div class="space-x-6">
-          <span class="hover:underline">Territories [UK and Europe]</span>
-          <a href="#" class="hover:underline">Follow Narangi Sharon [LinkedIn]</a>
-          <button class="ml-4">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 100 80">
-              <rect width="100" height="10"></rect>
-              <rect y="30" width="100" height="10"></rect>
-              <rect y="60" width="100" height="10"></rect>
-            </svg>
-          </button>
-        </div>
-      </nav>
-    
-      <!-- Main Section -->
-      <div class="flex flex-col md:flex-row items-stretch min-h-screen">
-        <!-- Left Image -->
-        <div class="w-full md:w-1/2 flex justify-center items-center relative">
-          <div class="relative">
-            <img src="https://via.placeholder.com/500x600" alt="Amie Blu" class="w-[300px] md:w-[400px] h-auto" />
-            <!-- Red Overlay -->
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[200px] h-full bg-red-600 opacity-70 mix-blend-multiply"></div>
-          </div>
-        </div>
-    
-        <!-- Right Text -->
-        <div class="w-full md:w-1/2 flex flex-col justify-center p-10">
-          <div class="text-sm mb-6">
-            <p class="mb-2">■ (J;/)</p>
-            <p class="uppercase tracking-widest font-semibold">Inventive and original. A name to watch.</p>
-          </div>
-    
-          <p class="text-md mb-6 leading-relaxed">
-            Inspired by cinema, every shot drives the story forward. Sophisticated yet fresh.
-          </p>
-          <p class="text-md mb-10 leading-relaxed">
-            Our shared love for our work, our belief in the power of collaboration, the magic of people, and the wonder of true artistry unite everything we do.
-          </p>
-    
-          <h1 class="text-6xl font-extrabold text-red-700">NARANGI</h1>
-          <h2 class="text-4xl italic text-red-600">Sharon</h2>
+    <!-- Main Section -->
+    <div class="flex flex-col md:flex-row items-stretch min-h-screen">
+      <!-- Left Image -->
+      <div class="w-full md:w-1/2 flex justify-center items-center relative">
+        <div class="relative">
+          <img src="eldohub profile.jpg" alt="Amie Blu" class="w-[300px] md:w-[400px] h-auto" />
+          <!-- Black Transparent Overlay -->
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[200px] h-full bg-black opacity-50 mix-blend-multiply"></div>
         </div>
       </div>
-    
-    </body>
-    </html>
-    
+
+      <!-- Right Text -->
+      <div class="w-full md:w-1/2 flex flex-col justify-center p-10">
+        <div class="text-sm mb-6">
+          <p class="mb-2">■ (J;/)</p>
+          <p class="uppercase tracking-widest font-semibold">Disrupting Law through Technology.</p>
+        </div>
+
+        <p class="text-md mb-6 leading-relaxed">
+          We use innovation to amplify justice and bring legal solutions closer to underserved communities.
+        </p>
+        <p class="text-md mb-10 leading-relaxed">
+          From automation to education, our work bridges the gap between law and technology for a more inclusive Africa.
+        </p>
+
+        <h1 class="text-6xl font-extrabold text-white">NARANGI</h1>
+        <h2 class="text-4xl italic text-white">Sharon</h2>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#252422] py-10 text-center text-white text-sm mt-10">
+      <div class="space-y-4">
+        <p class="text-lg font-semibold">Empowering Justice through Technology</p>
+        <p>✉️ <a href="mailto:sharonnarangi@gmail.com" class="hover:text-[#fb6f92]">sharonnarangi@gmail.com</a></p>
+        <div class="flex justify-center space-x-6 mt-4">
+          <a href="https://www.linkedin.com/in/sharon-narangi" target="_blank" class="hover:text-[#fb6f92]">LinkedIn</a>
+          <a href="https://www.tiktok.com/@narangi_legaltech" target="_blank" class="hover:text-[#fb6f92]">TikTok</a>
+        </div>
+        <p class="mt-6 italic text-white">Building Africa’s future one code & case at a time.</p>
+      </div>
+    </footer>
+
   </body>
 </html>
