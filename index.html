@@ -13,99 +13,88 @@
     </style>
   </head>
 
-  <body class="bg-[#1C1C1E] font-sans text-white">
+
+  <body class="bg-[#778da9] dark:bg-[#2C1A2E] text-[#3D2C3C] dark:text-[#F5F5F5] transition duration-700 ease-in-out">
 
     <!-- Header -->
-    <header class="bg-[#3A2E2D] py-4">
-      <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 space-y-4 md:space-y-0">
-        <h1 class="text-white text-2xl md:text-3xl font-bold font-[Bungee] text-center md:text-left">LEGAL TECH WITH NARANGI</h1>
-        <ul class="flex flex-wrap justify-center md:justify-end space-x-6 md:space-x-8 font-semibold text-base md:text-lg">
-          <li class="flex items-center space-x-2 hover:text-[#fb6f92] transition cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M3 9.5L12 3l9 6.5V21a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1V9.5z"/>
-            </svg>
-            <span>HOME</span>
-          </li>
-
-          <li class="flex items-center space-x-2 hover:text-[#fb6f92] transition cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M12 12v4M12 8h.01M4.22 19.78A10 10 0 1 1 19.78 4.22 10 10 0 0 1 4.22 19.78z"/>
-            </svg>
-            <span>ABOUT ME</span>
-          </li>
-
-          <li class="flex items-center space-x-2 hover:text-[#fb6f92] transition cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M15 4V2h-6v2M6 6h12v14H6z"/>
-            </svg>
-            <span>PROJECTS</span>
-          </li>
-
-          <li class="flex items-center space-x-2 hover:text-[#fb6f92] transition cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-            <span>CONTACT ME</span>
-          </li>
+    <header class="bg-[#0d1b2a] dark:bg-[#3B2241] p-6">
+      <nav class="container mx-auto flex flex-wrap md:flex-nowrap justify-between items-center px-4 gap-4">
+        <!-- Simplified Branding -->
+        <a href="#" class="text-white text-xl md:text-2xl font-bold font-[Bungee]">
+          Narangi | LegalTech
+        </a>
+        
+        <!-- Nav Links -->
+        <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-white font-medium text-sm md:text-base">
+          <li><a href="#home" class="hover:text-[#fb6f92] transition">Home</a></li>
+          <li><a href="#about" class="hover:text-[#fb6f92] transition">About</a></li>
+          <li><a href="#projects" class="hover:text-[#fb6f92] transition">Projects</a></li>
+          <li><a href="#contact" class="hover:text-[#fb6f92]  transition">Contact</a></li>
         </ul>
       </nav>
     </header>
+    
 
-    <!-- Amie Blu Style Section -->
-    <nav class="flex flex-col md:flex-row justify-between items-center p-4 md:p-6 text-sm font-medium uppercase text-white space-y-2 md:space-y-0">
-      <div class="space-x-4 md:space-x-6">
-        <a href="https://www.linkedin.com/posts/swanyalaw-advocates-32a36835b_upholding-the-letter-of-the-law-why-the-activity-7327756775917502464-TFWc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFmTcdIBKAwjV2c4o9Hs6pjDTheT17b97Ro" class="hover:text-[#fb6f92]">LEGAL ARTICLES</a>
-      </div>
-      <div class="space-x-4 md:space-x-6">
-        <a href="https://www.linkedin.com/in/sharon-narangi-3a4499240/" class="hover:text-[#fb6f92]">
-          Follow Narangi Sharon [LinkedIn]
-        </a>
-      </div>
-    </nav>
+    
 
-    <!-- Main Section -->
-    <div class="flex flex-col md:flex-row items-stretch min-h-screen">
-      <!-- Left Image -->
-      <div class="w-full md:w-1/2 flex justify-center items-center p-4 md:p-10">
-        <div class="relative">
-          <img src="LEGAL TECH img.webp" alt="Amie Blu" class="w-[250px] md:w-[400px] h-auto rounded-lg" />
-          <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[200px] h-full bg-black opacity-50 mix-blend-multiply"></div>
-        </div>
-      </div>
 
-      <!-- Right Text -->
-      <div class="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-10">
-        <div class="text-sm mb-6">
-          <p class="mb-2">■ (Legal Tech;/)</p>
-          <p class="uppercase tracking-widest font-semibold">Where law meets innovation.</p>
-        </div>
 
-        <p class="text-base md:text-lg mb-6 leading-relaxed">
-          Using innovation to amplify justice and bring legal solutions closer to underserved communities.
-        </p>
-        <p class="text-base md:text-lg mb-10 leading-relaxed">
-          From automation to education, I bridges the gap between law and technology for a more inclusive Africa.
-        </p>
+  <!-- Container: flex for layout -->
+<div class="flex flex-col md:flex-row max-w-6xl mx-auto items-center px-6 md:px-12 py-12">
 
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white">NARANGI</h1>
-        <h2 class="text-2xl md:text-4xl italic text-white">Sharon</h2>
-      </div>
+  <!-- Left side: Text content -->
+  <div class="w-full md:w-1/2 flex flex-col justify-center text-[#3A2E2D] dark:text-white pr-0 md:pr-10">
+    <div class="text-sm mb-6">
+      <p class="mb-2">■ (Legal Tech;/)</p>
+      <p class="uppercase tracking-widest font-semibold">Justice. Coded.</p>
     </div>
 
+    <p class="text-black font-bold md:text-lg mb-4 leading-relaxed">
+      I build no-code legal tools from AI-powered FAQs to justice access platforms, to help women, youth, and underserved communities navigate the law.
+    </p>
+    <p class="text-black font-bold md:text-lg mb-4 leading-relaxed">
+      Using Webflow, Airtable, Typeform, and GPT, I translate complex legal systems into intuitive, digital support. My goal: launch three inclusive legal tech solutions by the end of 2026.
+    </p>
+    <p class="text-black font-bold md:text-lg mb-10 leading-relaxed">
+      Africa deserves accessible justice and I’m building it, one digital system at a time.
+    </p>
+
+    <h1 class="text-[#3A2E2D] text-5xl font-extrabold">NARANGI</h1>
+    <h2 class="text-[#2f2f2f] md:text-4xl italic">Sharon</h2>
+  </div>
+
+  <!-- Right side: Animation -->
+  <div class="w-full md:w-1/2 flex justify-center">
+    <lottie-player 
+      src="https://assets10.lottiefiles.com/packages/lf20_puciaact.json" 
+      background="transparent" 
+      speed="1" 
+      loop 
+      autoplay 
+      style="width: 100%; max-width: 400px; height: auto;">
+    </lottie-player>
+  </div>
+</div>
+
     <!-- About Me Section -->
-<section id="about" class="py-20 px-6 bg-[#2A2423]">
-  <div class="max-w-6xl mx-auto">
+    <section id="about" class="py-20 px-6 bg-[#005f73]">
+      <div class="max-w-6xl mx-auto">
     <!-- Top Grid -->
     <div class="grid md:grid-cols-2 gap-10 items-center">
-      <!-- Image -->
       <div class="flex justify-center">
-        <img src="eldohub profile.jpg" alt="Profile Photo" class="rounded-2xl shadow-lg w-72 h-72 object-cover" />
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<dotlottie-player src="https://lottie.host/63415fc5-4eaf-4e98-9f95-e1a4f48fd161/heAk8HQtJ8.lottie" background="transparent" speed="1" style="width: 300px; height: 300px"
+ loop autoplay></dotlottie-player>
       </div>
       <!-- Intro Text -->
       <div>
-        <h2 class="text-4xl font-bold mb-4 text-white">Hi there!</h2>
-        <p class="text-[#B0A8A4] text-lg leading-relaxed">
-          Fuelled by a passion for designing compelling products, I have a deep desire to excel and continuously improve in my work. Learn more about my journey below.
+        <h2 class="text-4xl font-bold mb-4 text-white">From Statutes to Startups
+
+        </h2>
+        <p class="text-white text-lg leading-relaxed">
+          I’m a law student with a big heart for tech and even bigger dreams for justice. What started as a passion for writing case briefs and learning courtroom etiquette slowly evolved into something deeper 
+          a desire to build systems that actually work for people. I spend my mornings grounding myself in faith and structure, my days learning to code and design smarter legal tools, and my nights 
+          dreaming up ways to make the law feel less scary and more human. This space is my attempt to merge it all,law, creativity, tech, and service , into something that can truly help people. 
         </p>
       </div>
     </div>
@@ -113,79 +102,130 @@
     <!-- Career Section -->
     <div class="mt-16">
       <h3 class="text-3xl font-semibold text-white mb-4">My Career So Far</h3>
-      <p class="text-[#B0A8A4] text-base leading-relaxed max-w-3xl">
-        Always up for a challenge, I’ve worked for lean start-ups and was a member of the first New Zealand start-up to attend Y Combinator. From there, I worked my way up to Art Director and Team Lead at Appster where I oversaw the design of 30+ apps. Currently, I lead UX at a SaaS start-up.
+      <p class="text- white text-white leading-relaxed max-w-3xl">
+        My career journey is rooted in legal education and fueled by innovation. 
+        I've interned in both legal offices and research roles, sharpening my understanding of
+         legal systems and client needs. Alongside this, I earned a certificate in web development 
+         and immersed myself in tools like Webflow, GPT, and Airtable to prototype legal tech platforms.
+          My work blends legal precision with human-centered design, 
+          especially focused on helping women, youth, and underserved communities. 
+          Whether drafting legal memos or designing no-code solutions, 
+          I’m always working toward the same goal: expanding access to justice
+           through creativity, clarity, and technology.
+
       </p>
 
       <!-- Skills Tags -->
       <div class="flex flex-wrap gap-3 mt-6">
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">UI Design</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">UX Design</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">Prototyping</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">Branding</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">HTML/CSS</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">Wireframing</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">Info Architecture</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">User Research</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">User Interviews</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">Leadership</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">Sketch</span>
-        <span class="bg-[#4B3F3E] text-[#E6E3E3] px-4 py-2 rounded-full text-sm">Adobe Suite</span>
+        <span class="bg-[#264653] text-white px-4 py-2 rounded-full text-sm">HTML/CSS</span>
+        <span class="bg-[#264653] text-white px-4 py-2 rounded-full text-sm">Social Media Management</span>
+        <span class="bg-[#264653] text-white px-4 py-2 rounded-full text-sm">Prototyping</span>
+        <span class="bg-[#264653] text-white  px-4 py-2 rounded-full text-sm">Branding</span>
+        <span class="bg-[#264653] text-white px-4 py-2 rounded-full text-sm">Design Thinking</span>
+        <span class="bg-[#264653] text-white px-4 py-2 rounded-full text-sm">Legal Writing</span>
+        <span class="bg-[#264653] text-white px-4 py-2 rounded-full text-sm">Modelling</span>
+        <span class="bg-[#264653] text-white px-4 py-2 rounded-full text-sm">Legal Research</span>
+        <span class="bg-[#264653] text-white  px-4 py-2 rounded-full text-sm">Trial Advocacy</span>
+        <span class="bg-[#264653] text-white py-2 rounded-full text-sm">Leadership</span>
+      
       </div>
     </div>
   </div>
 </section>
 
 
-  <section class="max-w-6xl mx-auto my-16 px-4">
-  <h2 class="text-2xl font-bold mb-6 text-white">My Projects</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    <!-- Project Card -->
-    <div class="bg-[#3E2F2E] rounded-lg overflow-hidden shadow-md">
-      <img src="project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
-      <div class="p-4 text-[#F1ECE9]">
-        <h3 class="font-semibold text-lg">Construction LTD</h3>
-        <p class="text-sm text-[#CBBFB8]">Collaborative Construction Website</p>
-      </div>
-    </div>
+<section id="projects" class="w-full bg-[#1b263b] py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6 text-white">My Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-    <!-- Repeat 3 more cards -->
-    <div class="bg-[#3E2F2E] rounded-lg overflow-hidden shadow-md">
-      <img src="project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
-      <div class="p-4 text-[#F1ECE9]">
-        <h3 class="font-semibold text-lg">Netflix FAQ Section</h3>
-        <p class="text-sm text-[#CBBFB8]">Mini Learning Project</p>
-      </div>
-    </div>
+      <!-- Project Card 1 -->
+      <div class="bg-[#778da9] rounded-lg overflow-hidden shadow-md">
+        <img src="project1.jpg" alt="Project 1" class="w-full h-48 object-cover" />
+        <div class="p-4 text-[#F1ECE9] space-y-2">
+          <h3 class="font-semibold text-lg">Construction LTD</h3>
+          <p class="text-sm text-black font-bold">Collaborative Construction Website</p>
 
-    <div class="bg-[#3E2F2E] rounded-lg overflow-hidden shadow-md">
-      <img src="project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
-      <div class="p-4 text-[#F1ECE9]">
-        <h3 class="font-semibold text-lg">Pyramid Generator</h3>
-        <p class="text-sm text-[#CBBFB8]">JavaScript Learning Project</p>
+          <p class="text-sm text-white leading-relaxed">
+            A platform connecting construction professionals with clients for streamlined project management.
+          </p>
+          <p class="text-sm text-white"><span class="font-semibold">Tech Stack:</span> React, Node.js, MongoDB</p>
+          <p class="text-sm text-white"><span class="font-semibold">My Role:</span> Full-stack development, UI design, backend API integration.</p>
+          <a href="https://github.com/yourusername/construction-ltd" target="_blank" class="inline-block mt-2 text-sm text-blue-200 underline hover:text-white transition">
+            View on GitHub →
+          </a>
+        </div>
       </div>
-    </div>
 
-    <div class="bg-[#3E2F2E] rounded-lg overflow-hidden shadow-md">
-      <img src="project4.jpg" alt="Project 4" class="w-full h-48 object-cover">
-      <div class="p-4 text-[#F1ECE9]">
-        <h3 class="font-semibold text-lg">Zomato Landing Page</h3>
-        <p class="text-sm text-[#CBBFB8]">A project to</p>
+      <!-- Project Card 2 -->
+      <div class="bg-[#778da9] rounded-lg overflow-hidden shadow-md">
+        <img src="project2.jpg" alt="Project 2" class="w-full h-48 object-cover" />
+        <div class="p-4 text-[#F1ECE9] space-y-2">
+          <h3 class="font-semibold text-lg">Netflix FAQ Section</h3>
+          <p class="text-sm text-black font-bold">Mini Learning Project</p>
+
+          <p class="text-sm text-white leading-relaxed">
+            Developed an interactive FAQ section mimicking Netflix’s interface to improve UI/UX skills.
+          </p>
+          <p class="text-sm text-white"><span class="font-semibold">Tech Stack:</span> HTML, CSS, JavaScript</p>
+          <p class="text-sm text-white"><span class="font-semibold">My Role:</span> Designed UI and implemented FAQ accordion functionality.</p>
+          <a href="https://github.com/yourusername/netflix-faq" target="_blank" class="inline-block mt-2 text-sm text-blue-200 underline hover:text-white transition">
+            View on GitHub →
+          </a>
+        </div>
       </div>
+
+      <!-- Project Card 3 -->
+      <div class="bg-[#778da9] rounded-lg overflow-hidden shadow-md">
+        <img src="project3.jpg" alt="Project 3" class="w-full h-48 object-cover" />
+        <div class="p-4 text-[#F1ECE9] space-y-2">
+          <h3 class="font-semibold text-lg">Pyramid Generator</h3>
+          <p class="text-sm text-black font-bold">JavaScript Learning Project</p>
+
+          <p class="text-sm text-white leading-relaxed">
+            A simple pyramid pattern generator built using vanilla JavaScript. Helped me grasp loops, DOM manipulation, and user input handling.
+          </p>
+          <p class="text-sm text-white"><span class="font-semibold">Tech Stack:</span> HTML, CSS, JavaScript</p>
+          <p class="text-sm text-white"><span class="font-semibold">My Role:</span> Designed and coded the entire interface and logic independently.</p>
+          <a href="https://github.com/yourusername/pyramid-generator" target="_blank" class="inline-block mt-2 text-sm text-blue-200 underline hover:text-white transition">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="bg-[#778da9] rounded-lg overflow-hidden shadow-md">
+        <img src="project4.jpg" alt="Project 4" class="w-full h-48 object-cover" />
+        <div class="p-4 text-[#F1ECE9] space-y-2">
+          <h3 class="font-semibold text-lg">Zomato Landing Page</h3>
+          <p class="text-sm text-black font-bold">Understanding landing pages</p>
+
+          <p class="text-sm text-white leading-relaxed">
+            Created a responsive landing page inspired by Zomato, focusing on clean UI and mobile-first design.
+          </p>
+          <p class="text-sm text-white"><span class="font-semibold">Tech Stack:</span> HTML, CSS, Tailwind CSS</p>
+          <p class="text-sm text-white"><span class="font-semibold">My Role:</span> Full design and development from scratch.</p>
+          <a href="https://github.com/yourusername/zomato-landing-page" target="_blank" class="inline-block mt-2 text-sm text-blue-200 underline hover:text-white transition">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 
     
-<section class="max-w-xl mx-auto my-16 p-8 bg-[#9E2A2B] shadow-xl rounded-lg">
-  <h2 class="text-2xl font-bold mb-6 text-white">Connect with Me</h2>
+
+<section id="contact" class="max-w-6xl mx-auto my-16 p-8 bg-[#0d1b2a] shadow-xl rounded-lg">
+  <h2 class="text-3xl font-bold mb-8 text-white">Connect with Me</h2>
   
   <form class="space-y-6">
     <div>
       <label class="block font-semibold mb-2 text-white">Project Details</label>
       <textarea 
-        class="w-full p-3 bg-white border border-[#D4BFB9] rounded-md min-h-[120px] text-[#2C2321] placeholder:text-gray-500" 
+        class="w-full p-4 bg-white border border-[#D4BFB9] rounded-md min-h-[140px] text-[#2C2321] placeholder:text-gray-500" 
         placeholder="Describe your project, design requirements, timeline, and goals"
         minlength="50"
         required
@@ -208,7 +248,7 @@
       <input 
         type="number" 
         class="w-full p-3 bg-white border border-[#D4BFB9] rounded-md text-[#2C2321] placeholder:text-gray-500" 
-        placeholder="$5000 minimum"
+        placeholder="$"
         min="5000"
         required
       />
@@ -216,20 +256,18 @@
 
     <button 
       type="submit"
-      class="w-full bg-[#B76C70] text-white font-bold py-3 rounded-full hover:bg-[#9e565a] transition"
+      class="w-full bg-[#415a77] text-white font-bold py-4 rounded-full hover:bg-[#005f73] transition"
     >
       Send Message
     </button>
   </form>
 </section>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-
-
-    
-
-  </body>
+  
+</body>
   <!-- Footer -->
-    <footer class="bg-[#3A2E2D] py-10 text-center text-white text-sm mt-10 px-4">
+    <footer class="bg-[#0d1b2a] py-10 text-center text-white text-sm mt-10 px-4">
       <div class="space-y-4">
         <p class="text-base md:text-lg font-semibold">Empowering Justice through Technology</p>
         
